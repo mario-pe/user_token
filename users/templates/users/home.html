@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}index{% endblock %}
+
+{% block content %}
+    {% if info %}
+        <div class="container">
+            <div class="alert alert-danger">
+                <p>zostales wylogowany</p>
+            </div>
+        </div>
+    {% endif  %}
+
+
+    <div class="container-fluid">
+        <div class=”row”>
+            <div class="col-lg-offset-1">
+                <div class="col-md-10" style="background-color: #CCCDDD">
+                    <h4>Witaj {{ user.username }}, jestes zalogowany</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
