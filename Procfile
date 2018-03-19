@@ -1,1 +1,1 @@
-web: gunicorn user_token.wsgi
+web: gunicorn UserToken.wsgi
