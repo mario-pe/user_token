@@ -1,1 +1,1 @@
-web: gunicorn users:app
+web: gunicorn UserToken:app
